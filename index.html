@@ -8,7 +8,8 @@
     <title>Document</title>
     <style>
         body{
-            background-color: #1a1a2e;
+            /* background-color: #1a1a2e; */
+            background-color: #22272e;
             overflow: hidden;
         }
         .ball {
@@ -20,16 +21,19 @@
         .whoami{
             width: 80%;
             margin: 0 auto;
+
+        }
+        .name{
+            border: 1px solid #444c56;
+            backdrop-filter: blur(6px);
         }
         h1{
             font-size: 50px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            color: #fff;
+            color: #adbac7;
             text-align: center;
             text-transform: capitalize;
-            border: 1px solid #fff;
             padding: 30px 10px;
-            backdrop-filter: blur(3px);
             
         }
         p{
@@ -43,7 +47,9 @@
 <body>
     <div class="ball"></div>
    <div class="whoami">
-    <h1>Umair Mehmood</h1>
+    <div class="name">
+        <h1>Umair Mehmood</h1>
+    </div>
     <p>Just a programmer</p>
    </div>
     <script src="ball.js"></script>
