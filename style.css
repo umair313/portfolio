@@ -1,6 +1,12 @@
+:root{
+    --primary-border-color: #444c56;
+    --primary-background-color:#22272e;
+    --primary-text-color: #adbac7;
+}
+
 body{
     /* background-color: #1a1a2e; */
-    background-color: #22272e;
+    background-color: var(--primary-background-color);
     overflow: hidden;
 }
 .ball {
@@ -15,13 +21,13 @@ body{
 
 }
 .name{
-    border: 1px solid #444c56;
+    border: 1px solid var(--primary-border-color);
     backdrop-filter: blur(6px);
 }
 h1{
     font-size: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #adbac7;
+    color: var(--primary-text-color);
     text-align: center;
     text-transform: capitalize;
     padding: 30px 10px;
@@ -29,6 +35,6 @@ h1{
 }
 p{
     font-size: 24px;
-    color: #fff;
+    color: var(--primary-text-color);
     text-align: center;
 }
