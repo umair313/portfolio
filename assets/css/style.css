@@ -21,12 +21,8 @@ body{
 }
 .d-flex{
     display: flex;
+    flex-wrap: wrap;
     
-}
-.whoami{
-    width: 80%;
-    margin: 0 auto;
-
 }
 .primary-border{
     border: 1px solid var(--primary-border-color);
@@ -41,12 +37,13 @@ body{
 }
 .box_one{
     flex-basis: 30%;
-    
-
+}
+.img{
+    flex-shrink: 0;
 }
 #img{
-    max-width: 60%;
-    width: 50%;
+
+    width: 80%;
     border-radius: 50%;
     display: block;
     margin: 0 auto;
@@ -105,3 +102,16 @@ a#twitter:hover{
 
 }
 
+@media only screen and (max-width:768px){
+    .d-flex{
+        flex-direction: column;
+    }
+    #img{
+        width: 50%;
+    }
+    ul li{
+        margin: 5px;
+        text-align: center;
+    }
+    
+}
