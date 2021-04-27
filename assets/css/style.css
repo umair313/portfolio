@@ -102,9 +102,7 @@ a#twitter:hover{
 }
 
 @media only screen and (max-width:768px){
-    .header{
-        margin-left: 20px;
-    }
+
     .d-flex{
         flex-direction: column;
     }
