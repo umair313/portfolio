@@ -36,18 +36,17 @@ body{
     padding: 15px;
 }
 .box_one{
-    flex-basis: 30%;
+    flex-basis: 15%;
+    
+    
 }
-.img{
-    flex-shrink: 0;
-}
-#img{
 
-    width: 80%;
+#img{
+    width: 100%;
     border-radius: 50%;
     display: block;
-    margin: 0 auto;
-    
+    margin-left: auto;
+    margin-right: auto;
 }
 .box_two{
     flex-basis: 80%;
@@ -103,11 +102,15 @@ a#twitter:hover{
 }
 
 @media only screen and (max-width:768px){
+    .header{
+        margin-left: 20px;
+    }
     .d-flex{
         flex-direction: column;
     }
     #img{
         width: 50%;
+        align-content: center;
     }
     ul li{
         margin: 5px;
